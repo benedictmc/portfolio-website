@@ -320,7 +320,7 @@ const Home = () =>{
                                 <Card>
                                     
                                     <Card.Body>
-                                        <Card.Title className="skill-title ">Main Skills</Card.Title>
+                                        <Card.Title className="skill-title ">Changed and pushed 20:01</Card.Title>
                                         <Card.Text>
                                         
                                         </Card.Text>
