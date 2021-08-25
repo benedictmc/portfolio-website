@@ -9,8 +9,6 @@
     transition: transform 500ms ease;
     margin-right: 4%;
     margin-left: 4%;
-    /* padding: 3%; */
-    /* margin: 5%; */
 }
 
 .custom-card:hover{
@@ -46,7 +44,7 @@
     content: "";
     position: absolute;
     height: 4px;
-    left: calc(var(--padding)*-1);
+    left: calc(var(--padding)* -1);
     bottom: 0;
     width: calc(100% + var(--padding));
     background: #51ADCF;;

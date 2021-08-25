@@ -33,6 +33,9 @@
     "web-vitals": "^0.2.4",
     "yarn": "^1.22.10"
   },
+  "resolutions": {
+    "react-scripts/postcss-preset-env/postcss-custom-properties": "^10.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

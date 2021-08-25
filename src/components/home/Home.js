@@ -42,7 +42,6 @@ import Particles from "react-particles-js"
 import { CSSTransition } from 'react-transition-group';
 import { Parallax } from 'react-parallax';
 
-import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
 import Fade from 'react-reveal/Fade';
 
 import CustomCard from './Card'
