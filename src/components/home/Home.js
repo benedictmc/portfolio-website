@@ -244,20 +244,20 @@ const Home = () =>{
                                 <Card.Text>
                                     <div className="skill">
                                         <div className="skill-text">Python</div> <img src={python} className="python-icon" ></img>
-                                        <ProgressBar now={90}></ProgressBar>
+                                        <ProgressBar now={95}></ProgressBar>
                                     </div>
                                     
                                     <div className="skill">
                                         <div className="skill-text">SQL</div> <img src={sql} className="python-icon" ></img>
-                                        <ProgressBar now={80}></ProgressBar>
+                                        <ProgressBar now={92}></ProgressBar>
                                     </div>
                                     <div className="skill">
                                         <div className="skill-text">React</div> <img src={atom} className="python-icon" ></img>
-                                        <ProgressBar now={80}></ProgressBar>
+                                        <ProgressBar now={90}></ProgressBar>
                                     </div>
                                     <div className="skill">
                                         <div className="skill-text">Java</div> <img src={java} className="python-icon" ></img>
-                                        <ProgressBar now={75}></ProgressBar>
+                                        <ProgressBar now={85}></ProgressBar>
                                     </div>
                                 </Card.Text>
                             </Card.Body>
