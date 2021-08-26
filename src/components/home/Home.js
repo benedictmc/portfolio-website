@@ -213,7 +213,7 @@ const Home = () =>{
                     </div>
 
                     <div className="learn-more">
-                        { showButton ? <Button variant="outline-primary" onClick={scrollToTop}>Learn More</Button> : null }
+                        { showButton ? <Button variant="outline-primary" onClick={scrollToTop}>Learn More</Button> : <div className="empty-space"> </div> }
                     </div>
 
 

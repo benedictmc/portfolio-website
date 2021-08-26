@@ -21,7 +21,10 @@
 
 }
 
-
+.empty-space{
+  background-color: white;
+  height: 2.5em;
+}
 
 .container {
   min-height: 85vh; 
@@ -341,7 +344,7 @@ a:hover {
 
 
   .home-header{
-    padding-top: 10%;
+    padding-top: 20%;
     padding-bottom: 5%;
   }
 
