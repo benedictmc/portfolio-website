@@ -17,9 +17,9 @@
 }
 
 .custom-card-GAN{
-    /* /* background-image: url(assets/gan.jpg); */
-    background-image: url(assets/nn.png); 
-    background-image: url(assets/stock.jpeg);
+    background-image: url(assets/gan.jpg);
+    /* background-image: url(assets/nn.png); 
+    background-image: url(assets/stock.jpeg); */
 }
 
 /* .custom-card-music-ai{
