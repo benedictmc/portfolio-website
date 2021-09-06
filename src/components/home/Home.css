@@ -168,7 +168,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,248,251,1) 10
 a {
 	font-size: 100%;
 	text-decoration: none;
-	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	/* background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat; */
 	transition: 1s background-size;
 }
 

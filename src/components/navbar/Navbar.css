@@ -6,13 +6,8 @@
     align-items: center;
     font-size: 1.2rem;
     font-weight: 900;
-    /* background-color: aliceblue; */
 }
 
-
-.me{    
-
-}
 
 .navbar-logo {
     color: #000000;
@@ -28,7 +23,9 @@
    
 }
 
-
+.nav-bar-scroll{
+    text-decoration: none !important;
+}
 
 .nav-menu{
     display: grid;    
@@ -42,15 +39,17 @@
 }
 
 .nav-links{
+    cursor: pointer;
     color: black;
     text-decoration: none !important;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover{
+    text-decoration: none !important;
     background-color: #51adcf;
     border-radius: 4px;
-    transition: all 0.2s ease-out;
+    /* transition: all 0.2s ease-out; */
     color: black;
 }
 

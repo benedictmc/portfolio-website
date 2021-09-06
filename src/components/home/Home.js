@@ -318,10 +318,6 @@ const Home = () =>{
 
             <div className="footer">
 
-            <Element name="test4" className="element">
-                test 4
-            </Element>
-
 
             </div>
         </div>
