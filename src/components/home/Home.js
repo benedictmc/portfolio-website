@@ -3,7 +3,7 @@ import './Home.css'
 
 import LoadingBar from 'react-top-loading-bar'
 import React, { useState, useEffect } from 'react'
-import { Button, Card, ProgressBar } from 'react-bootstrap';
+import { Button, Card, ProgressBar, Alert } from 'react-bootstrap';
 import { SpinnerDotted } from 'spinners-react';
 
 import Badge from 'react-bootstrap/Badge'
@@ -26,6 +26,7 @@ import Typed from 'react-typed';
 import Particles from "react-particles-js"
 import Fade from 'react-reveal/Fade';
 import CustomCard from './Card'
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 
 const config = {
@@ -57,8 +58,27 @@ const config = {
     }
 }
 
+function AlertDismissibleExample() {
+    const [show, setShow] = useState(true);
+  
+    if (show) {
+      return (
+        <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+          <p>
+            Change this and that and try again. Duis mollis, est non commodo
+            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            Cras mattis consectetur purus sit amet fermentum.
+          </p>
+        </Alert>
+      );
+    }
+    return <Button onClick={() => setShow(true)}>Show Alert</Button>;
+  }
+
 
 const Home = () =>{
+
 
     const [introTextFade, setIntroTextFade] = useState(false);
 
@@ -69,6 +89,9 @@ const Home = () =>{
     const [progress, setProgress] = useState(0)
 
     const [showButton, setShowButton] = useState(false)
+
+    const [Alert, setAlert] = useState(true);
+
 
 
     const sleep = (milliseconds) => {
@@ -83,6 +106,14 @@ const Home = () =>{
             await sleep(200)
           }
     }      
+
+
+    const contactEmail = () =>{
+        console.log("Here")
+        NotificationManager.info('Info message');
+
+    }
+
 
     useEffect(() =>{
         console.log("Setting event listener")
@@ -119,6 +150,10 @@ const Home = () =>{
         return () => window.removeEventListener("scroll", handleScroll);
       }, [introTextFade, introText]);
 
+
+    // const NotificationContainer = window.ReactNotifications.NotificationContainer;
+    // const NotificationManager = window.ReactNotifications.NotificationManager;
+      
 
     
     return(   
@@ -294,11 +329,29 @@ const Home = () =>{
             <Element name="scrollToContact" className="element"></Element>
             <div className="contact">
                 <div className="skill-card">
-                        <h3 className="about-heading">Contact</h3>
-                        <p>
-                            Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                        </p>
-                            <Fade left>
+                        
+                        <div className="contact-div">
+                            <h3 className="about-heading">Contact</h3>
+                            <p className="contact-text">
+
+                                I am currently interested in joining an ambitious and inovative team in the software engineering/data engineering field! I am also be interested in any freelance projects!
+
+                                Feel free to send me an email below!
+
+                                
+                                <br></br>
+                            </p>
+                            <Button className="contact-button" size="lg" onClick={() => {navigator.clipboard.writeText('benmcgovern13@gmail.com')}}>
+                                benmcgovern13@gmail.com
+                            </Button>
+                            <Button className="contact-button" size="lg" onClick={contactEmail}>
+                                benmcgovern13@gmail.com
+                            </Button>
+                            <AlertDismissibleExample/>
+                        </div>
+
+                        
+                            {/* <Fade left>
                                 <Card>
                                     
                                     <Card.Body>
@@ -308,10 +361,7 @@ const Home = () =>{
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
-                            <form>
-                                {/* <input> </input> */}
-                            </form>
-                            </Fade>
+                            </Fade> */}
                     </div>
 
             </div>

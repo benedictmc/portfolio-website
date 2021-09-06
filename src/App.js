@@ -16,7 +16,17 @@ function App() {
 
     <div className="App">
 
-      <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');</style>
+{/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet"> */}
+
+      {/* <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@100;400&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Lato&family=Signika&family=Signika+Negative&family=Work+Sans:wght@100;400&display=swap');</style> */}
+      <style>@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;400&display=swap');</style>
+      
       <NavBar/>
       <div className="whole-page">
         <Home/>
