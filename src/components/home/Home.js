@@ -26,7 +26,9 @@ import Typed from 'react-typed';
 import Particles from "react-particles-js"
 import Fade from 'react-reveal/Fade';
 import CustomCard from './Card'
-import {NotificationContainer, NotificationManager} from 'react-notifications';
+import { ToastContainer, toast } from 'material-react-toastify';
+import 'material-react-toastify/dist/ReactToastify.css';
+
 
 
 const config = {
@@ -58,23 +60,6 @@ const config = {
     }
 }
 
-function AlertDismissibleExample() {
-    const [show, setShow] = useState(true);
-  
-    if (show) {
-      return (
-        <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-          <p>
-            Change this and that and try again. Duis mollis, est non commodo
-            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-            Cras mattis consectetur purus sit amet fermentum.
-          </p>
-        </Alert>
-      );
-    }
-    return <Button onClick={() => setShow(true)}>Show Alert</Button>;
-  }
 
 
 const Home = () =>{
@@ -108,9 +93,19 @@ const Home = () =>{
     }      
 
 
+    
+
     const contactEmail = () =>{
+        navigator.clipboard.writeText('benmcgovern13@gmail.com')
         console.log("Here")
-        NotificationManager.info('Info message');
+        toast.success("Email Copied! 😃", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+        });
 
     }
 
@@ -341,13 +336,10 @@ const Home = () =>{
                                 
                                 <br></br>
                             </p>
-                            <Button className="contact-button" size="lg" onClick={() => {navigator.clipboard.writeText('benmcgovern13@gmail.com')}}>
-                                benmcgovern13@gmail.com
-                            </Button>
                             <Button className="contact-button" size="lg" onClick={contactEmail}>
                                 benmcgovern13@gmail.com
                             </Button>
-                            <AlertDismissibleExample/>
+                            <ToastContainer />
                         </div>
 
                         
