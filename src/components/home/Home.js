@@ -32,7 +32,7 @@ import guitar from './assets/guitar.jpg'
 
 
 // import { Parallax, Background } from 'react-parallax';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 
 import Typed from 'react-typed';
@@ -129,10 +129,10 @@ const Home = () =>{
     })
 
 
-    let scrollToTop = () => {
+    let scrollToAbout = () => {
         console.log("Scrolling triggered")
         // scroll.scrollToBottom();
-        scroll.scrollTo(1000);
+        scroll.scrollTo(1050);
     };
 
     let scrollDown = () =>{
@@ -213,7 +213,8 @@ const Home = () =>{
                     </div>
 
                     <div className="learn-more">
-                        { showButton ? <Button variant="outline-primary" onClick={scrollToTop}>Learn More</Button> : <div className="empty-space"> </div> }
+                    
+                        { showButton ? <Link activeClass="active" className="test4" to="about-me" spy={true} smooth={true} duration={500}><Button variant="outline-primary">Learn More</Button></Link> : <div className="empty-space"> </div> }
                     </div>
 
 
@@ -221,19 +222,23 @@ const Home = () =>{
             
                
             </div>
+            <Element name="scrollToAbout" className="element"></Element>
             <div className="about-me">
                 <div className="profile-skills">
                         <img className="profile-image" src={profile_picture}></img>
                         <div class="profile-text">
+                            
                             <h4 className="about-heading">About Me</h4>
                             
                             
                             <div className="profile-description">
+                                
                                 My name is Benedict McGovern (Ben). <br/><br/> I am a software engineer. I have a completed a B.Sc in Computer Science and Software Engineering Degree from <a href="https://www.maynoothuniversity.ie/" target='_blank'>Maynooth University</a> graduating in 2019. I learned many core computer science concepts including computer architecture, formal logic and algorithms and data structures.<br/><br/> 
                                 I have worked as a full stack developer for a cloud service company called <a target='_blank' href="https://www.ek.co/">Ekco</a>. I developed a web application with a Python backend and React front end. I have also completed an software developer internship in <a target='_blank' href="https://www.sap.com/uk/index.html">SAP</a>.
                             </div>
                         </div>
                 </div>
+                <Element name="scrollToSkills" className="element"></Element>
                 <div className="skill-card">
                     <h3 className="about-heading">Skills</h3>
                         <Fade left>
@@ -293,7 +298,9 @@ const Home = () =>{
                         </Fade>
                 </div>
             </div>
-
+            
+            <Element name="scrollToProjects" className="element"></Element>
+            
             <div className="projects">
                 <div className="project-container">
                     <Fade top>
@@ -312,10 +319,13 @@ const Home = () =>{
                 </div>
 
             </div>
-
+            <Element name="scrollToContact" className="element"></Element>
             <div className="contact">
                 <div className="skill-card">
                         <h3 className="about-heading">Contact</h3>
+                        <p>
+                            Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
                             <Fade left>
                                 <Card>
                                     
@@ -326,13 +336,19 @@ const Home = () =>{
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
-
+                            <form>
+                                {/* <input> </input> */}
+                            </form>
                             </Fade>
                     </div>
 
             </div>
 
             <div className="footer">
+
+            <Element name="test4" className="element">
+                test 4
+            </Element>
 
 
             </div>

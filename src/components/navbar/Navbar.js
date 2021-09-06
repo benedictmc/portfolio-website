@@ -2,10 +2,28 @@ import react, {Component, useState, useEffect} from 'react'
 import {MenuItems} from './MenuItems'
 import './Navbar.css'
 import LoadingBar from 'react-top-loading-bar'
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Navbar = () => {
+
+    let scrollToAbout = () => {
+        console.log("Scrolling triggered")
+        // scroll.scrollToBottom();
+        scroll.scrollTo(1050);
+    };
+    let scrollToProjects = () => {
+        console.log("Scrolling triggered")
+        // scroll.scrollToBottom();
+        scroll.scrollTo(1050);
+    };
+    let scrollToContact = () => {
+        console.log("Scrolling triggered")
+        // scroll.scrollToBottom();
+        scroll.scrollTo(1050);
+    };
+   
+
 
     return(
         <div>
@@ -19,9 +37,12 @@ const Navbar = () => {
                     MenuItems.map((item, index) => {
                         return(
                             <li key={index}>
-                                <a className={item.cName} href="">
-                                    {item.title}
-                                </a>
+                                
+                                <Link activeClass="active" className="test4" to={item.scroll} spy={true} smooth={true} duration={500}>
+                                    <a className={item.cName}>
+                                        {item.title}
+                                    </a>
+                                </Link>
                             </li>
                     )})
                 }

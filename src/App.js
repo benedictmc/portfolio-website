@@ -4,6 +4,12 @@ import Home from './components/home/Home'
 import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ReactGA from 'react-ga';
+
+
+const TRACKING_ID = "G-3W1K1C5WLX"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 
 function App() {
   return (
