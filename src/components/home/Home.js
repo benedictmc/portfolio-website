@@ -204,7 +204,7 @@ const Home = () =>{
                             <div>
                                 <div className="short-description" >
                                     I am a <span className="blue">Software Engineer</span> 💻 living in Dublin, Ireland  <img src={irelandFlag} className="ireland-flag" ></img> <br/><br/> I enjoy creating projects to learn <span className="blue">Data Science</span> 🔬 <br/><br/>
-                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'Benedict-McGovern-CV.pdf'} download without rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
+                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'/cv.pdf'} without rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
                                 </div>
                             </div>
                         </Fade>
