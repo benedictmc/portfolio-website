@@ -101,8 +101,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,248,251,1) 10
 
 
 .projects{
-  padding-top: 12%;
-  height: 65rem;
+  padding-top: 10%;
+  height: max-content;
+  padding-bottom: 10%;
   width: 100%;
 }
 
@@ -307,6 +308,7 @@ a:hover {
 
 
 .contact{
+  padding-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -380,7 +382,16 @@ a:hover {
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:1300px) {
+
+
+  .project-box{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
   .profile-image{
     align-self: center;
   }
@@ -388,6 +399,9 @@ a:hover {
 
 
 @media (max-width:1400px) {
+  .custom-card{
+    margin-bottom: 5%;
+  }
 
   .profile-image{
     margin-top: 10%;
