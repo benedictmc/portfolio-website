@@ -1,15 +1,28 @@
 .custom-card{
     color: white;
     background-size: cover;
-    background-image: url(assets/hmm.png);
     padding: 16rem 0 0;
-    max-width: 35ch;
+    max-width: 40ch;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
     margin-right: 4%;
     margin-left: 4%;
 }
+
+
+.custom-card-music-ai{
+    background-image: url(assets/musicai.png);
+
+}
+
+.custom-card-GAN{
+    background-image: url(assets/python.png);
+}
+
+/* .custom-card-music-ai{
+    
+} */
 
 .custom-card:hover{
     transform: scale(1.05);

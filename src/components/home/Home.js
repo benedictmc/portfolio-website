@@ -229,12 +229,8 @@ const Home = () =>{
                 <div className="profile-skills">
                         <img className="profile-image" src={profile_picture}></img>
                         <div class="profile-text">
-                            
                             <h4 className="about-heading">About Me</h4>
-                            
-                            
                             <div className="profile-description">
-                                
                                 My name is Benedict McGovern (Ben). <br/><br/> I am a software engineer. I have a completed a B.Sc in Computer Science and Software Engineering Degree from <a href="https://www.maynoothuniversity.ie/" target='_blank'>Maynooth University</a> graduating in 2019. I learned many core computer science concepts including computer architecture, formal logic and algorithms and data structures.<br/><br/> 
                                 I have worked as a full stack developer for a cloud service company called <a target='_blank' href="https://www.ek.co/">Ekco</a>. I developed a web application with a Python backend and React front end. I have also completed an software developer internship in <a target='_blank' href="https://www.sap.com/uk/index.html">SAP</a>.
                             </div>
@@ -291,8 +287,8 @@ const Home = () =>{
                                         <h3><Badge className="skill-badge" bg="primary">CI/CD</Badge></h3>
                                         <h3><Badge className="skill-badge" bg="primary">Linux</Badge></h3>
                                         <h3><Badge className="skill-badge" bg="primary">Networking</Badge></h3>
-
-                                        
+                                        <h3><Badge className="skill-badge" bg="primary">Blockchain</Badge></h3>
+                                        <h3><Badge className="skill-badge" bg="primary">Cryptocurrency</Badge></h3>
                                     </div>
                                 </Card.Text>
                             </Card.Body>
@@ -315,9 +311,19 @@ const Home = () =>{
                     </Fade>
                 </div>
                 <div className="project-box">
-                            <CustomCard />
-                            <CustomCard />
-                            <CustomCard />
+                            <CustomCard card={
+                                {
+                                    "title": "AI Lyric Generator", 
+                                    "class": "custom-card custom-card-music-ai",
+
+                                }}/>
+                            <CustomCard card={ 
+                                {
+                                    "title": "GAN Price Prediction", 
+                                    "class": "custom-card custom-card-GAN",
+                                    "desrciption": "custom-card custom-card-GAN",
+                                }}/>
+                            {/* <CustomCard card={{"title": "AI Lyric Generator"}} /> */}
                 </div>
 
             </div>
@@ -329,7 +335,7 @@ const Home = () =>{
                             <h3 className="about-heading">Contact</h3>
                             <p className="contact-text">
 
-                                I am currently interested in joining an ambitious and inovative team in the software engineering/data engineering field! I am also be interested in any freelance projects!
+                                I am currently interested in joining an ambitious and inovative team in the Software Engineering/Data Engineering field. I am also be interested in any freelance projects! <br/>
 
                                 Feel free to send me an email below!
 
