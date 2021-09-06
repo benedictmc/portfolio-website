@@ -17,7 +17,7 @@
 }
 
 .custom-card-GAN{
-    background-image: url(assets/python.png);
+    background-image: url(assets/gan.jpg);
 }
 
 /* .custom-card-music-ai{
@@ -90,6 +90,19 @@
     color: rgb(255 255 255 / 0.85w)
 }
 
+.github-icon{
+    font-size: 2.5em;
+    margin-left: 15px;
+}
+
+.links{
+    display: flex;
+}
+
+
+.github-a{
+    color: white;
+}
 
 @media (hover) {
     .custom-card-content{

@@ -195,11 +195,6 @@ const Home = () =>{
                                 <SpinnerDotted size={200} speed={50} thickness={100} color="rgba(81,173,207)"  enabled={true}/>
                             </div>
                         }
-                        {/* {
-                            <div className="load-holder">
-                                <SpinnerDotted size={200} speed={50} thickness={100} color="rgba(81,173,207)"  enabled={true}/>
-                            </div>
-                        } */}
                     </div>
                     
 
@@ -232,7 +227,7 @@ const Home = () =>{
                             <h4 className="about-heading">About Me</h4>
                             <div className="profile-description">
                                 My name is Benedict McGovern (Ben). <br/><br/> I am a software engineer. I have a completed a B.Sc in Computer Science and Software Engineering Degree from <a href="https://www.maynoothuniversity.ie/" target='_blank'>Maynooth University</a> graduating in 2019. I learned many core computer science concepts including computer architecture, formal logic and algorithms and data structures.<br/><br/> 
-                                I have worked as a full stack developer for a cloud service company called <a target='_blank' href="https://www.ek.co/">Ekco</a>. I developed a web application with a Python backend and React front end. I have also completed an software developer internship in <a target='_blank' href="https://www.sap.com/uk/index.html">SAP</a>.
+                                I have worked as a full stack developer for a cloud service company called <a target='_blank' href="https://www.ek.co/">Ekco</a>. I developed a web application with a Python backend and React front end. I have also completed a software developer internship in <a target='_blank' href="https://www.sap.com/uk/index.html">SAP</a>.
                             </div>
                         </div>
                 </div>
@@ -311,18 +306,26 @@ const Home = () =>{
                     </Fade>
                 </div>
                 <div className="project-box">
-                            <CustomCard card={
-                                {
-                                    "title": "AI Lyric Generator", 
-                                    "class": "custom-card custom-card-music-ai",
-
-                                }}/>
                             <CustomCard card={ 
                                 {
                                     "title": "GAN Price Prediction", 
                                     "class": "custom-card custom-card-GAN",
-                                    "desrciption": "custom-card custom-card-GAN",
+                                    "description": "Used Generative Adversarial Network (GAN) to complete a timeseries prediction of bitcoin price. Used Python with Keras to build a GAN neural network",
+                                    "link": "https://colab.research.google.com/drive/1xWj68aaYW9ZDNZrWzfEFyOXlKVaP91U-", 
+                                    "githubLink": "https://github.com/benedictmc/Final-Year-Project",
+                                    "hasPDF": true,
+                                    "pdfLink": "https://github.com/benedictmc/Final-Year-Project/blob/master/15340696.pdf"
                                 }}/>
+                            <CustomCard card={
+                                {
+                                    "title": "AI Lyric Generator", 
+                                    "class": "custom-card custom-card-music-ai",
+                                    "description": "Generate new song lyrics through a Recurrent Neural Network. Creates lyrics that match an artist's style and flow. Created with Python and Angular",
+                                    "link": "https://master.dxk1rjs20wj09.amplifyapp.com/", 
+                                    "githubLink": "https://github.com/benedictmc/lyric-generation",
+                                    "hasPDF": false
+                                }}/>
+         
                             {/* <CustomCard card={{"title": "AI Lyric Generator"}} /> */}
                 </div>
 
@@ -334,13 +337,9 @@ const Home = () =>{
                         <div className="contact-div">
                             <h3 className="about-heading">Contact</h3>
                             <p className="contact-text">
-
-                                I am currently interested in joining an ambitious and inovative team in the Software Engineering/Data Engineering field. I am also be interested in any freelance projects! <br/>
-
-                                Feel free to send me an email below!
-
-                                
-                                <br></br>
+                            I am currently interested in joining an ambitious and innovative team in the Software Engineering/Data Engineering field. I am also interested in any freelance projects! <br/> 
+                            Feel free to send me an email below!
+                            <br></br>
                             </p>
                             <Button className="contact-button" size="lg" onClick={contactEmail}>
                                 benmcgovern13@gmail.com
