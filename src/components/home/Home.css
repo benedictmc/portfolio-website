@@ -316,6 +316,10 @@ a:hover {
 }
 
 
+.load-holder{
+  padding-top: 100%;
+}
+
 @media (max-width:400px) {
   
   .profile-image{
@@ -338,6 +342,9 @@ a:hover {
     margin-left:20px;
     margin-right:16px;
   } */
+
+
+  
   .container{
     width: 90%;
   }

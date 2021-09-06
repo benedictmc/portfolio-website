@@ -1,51 +1,31 @@
 import react, {Component} from 'react'
 import './Home.css'
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import {MenuItems} from './MenuItems'
 import LoadingBar from 'react-top-loading-bar'
 import React, { useState, useEffect } from 'react'
 import { Button, Card, ProgressBar } from 'react-bootstrap';
-// import { Fade, Button, Card, ProgressBar } from 'react-bootstrap';
-
-import { SpinnerCircular, SpinnerDotted } from 'spinners-react';
+import { SpinnerDotted } from 'spinners-react';
 
 import Badge from 'react-bootstrap/Badge'
-
 import irelandFlag from './assets/ireland.png'
 import linkedin from './assets/linkedin.png'
 import github from './assets/github.png'
-
 
 import python from './assets/python.png'
 import sql from './assets/sql.png'
 import java from './assets/java.png'
 import atom from './assets/atom.png'
 
-
 import cv from './assets/cv.png'
 import cv_file from './assets/Ben McGovern CV 07-21.pdf'
 import profile_picture from './assets/profile.png'
 
-
-import guitar from './assets/guitar.jpg'
-
-
 // import { Parallax, Background } from 'react-parallax';
 import { Link, Element, animateScroll as scroll } from "react-scroll";
-
-
 import Typed from 'react-typed';
 import Particles from "react-particles-js"
-
-
-import { CSSTransition } from 'react-transition-group';
-import { Parallax } from 'react-parallax';
-
 import Fade from 'react-reveal/Fade';
-
 import CustomCard from './Card'
-// import FadeIn from 'react-fade-in';
 
 
 const config = {
@@ -90,9 +70,6 @@ const Home = () =>{
 
     const [showButton, setShowButton] = useState(false)
 
-    const [showMessage, setShowMessage] = useState(false)
-    
-    let introTextStr = 'Inital'
 
     const sleep = (milliseconds) => {
         console.log("Sleeping")
@@ -116,7 +93,6 @@ const Home = () =>{
 
     useEffect(()=>{
         setTimeout(() => {
-            introTextStr = 'true'
             setIntroText(true)
           }, 2000)
           
@@ -129,15 +105,6 @@ const Home = () =>{
     })
 
 
-    let scrollToAbout = () => {
-        console.log("Scrolling triggered")
-        // scroll.scrollToBottom();
-        scroll.scrollTo(1050);
-    };
-
-    let scrollDown = () =>{
-        scroll.scrollToBottom();
-    }
 
     const handleScroll = ()=>{
         if (!introTextFade & introText){
@@ -198,10 +165,16 @@ const Home = () =>{
                                 <SpinnerDotted size={200} speed={50} thickness={100} color="rgba(81,173,207)"  enabled={true}/>
                             </div>
                         }
+                        {/* {
+                            <div className="load-holder">
+                                <SpinnerDotted size={200} speed={50} thickness={100} color="rgba(81,173,207)"  enabled={true}/>
+                            </div>
+                        } */}
                     </div>
                     
 
                     <div className="fade-box">
+                        
                         <Fade in={introTextFade} timeout={1600} >
                             <div>
                                 <div className="short-description" >
@@ -213,7 +186,6 @@ const Home = () =>{
                     </div>
 
                     <div className="learn-more">
-                    
                         { showButton ? <Link activeClass="active" className="test4" to="about-me" spy={true} smooth={true} duration={500}><Button variant="outline-primary">Learn More</Button></Link> : <div className="empty-space"> </div> }
                     </div>
 
