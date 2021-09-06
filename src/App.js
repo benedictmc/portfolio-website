@@ -7,9 +7,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga';
 
 
-const TRACKING_ID = "G-3W1K1C5WLX"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "UA-206793123-1"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
-
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
