@@ -328,7 +328,7 @@ const Home = () =>{
             <Element name="scrollToContact" className="element"></Element>
             <div className="contact">
                 <div className="skill-card">
-                        
+                    <Fade top>
                         <div className="contact-div">
                             <h3 className="about-heading">Contact</h3>
                             <p className="contact-text">
@@ -341,6 +341,7 @@ const Home = () =>{
                             </Button>
                             <ToastContainer />
                         </div>
+                    </Fade>
                     </div>
             </div>
 

@@ -437,6 +437,11 @@ a:hover {
   .contact{
     padding-bottom: 20em;
   }
+
+
+  .contact-div{
+    padding-left: 0%; 
+  }
 }
 
 
