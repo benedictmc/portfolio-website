@@ -28,6 +28,7 @@ import Fade from 'react-reveal/Fade';
 import CustomCard from './Card'
 import { ToastContainer, toast } from 'material-react-toastify';
 import 'material-react-toastify/dist/ReactToastify.css';
+import { Document, Page } from 'react-pdf';
 
 
 
@@ -204,7 +205,7 @@ const Home = () =>{
                             <div>
                                 <div className="short-description" >
                                     I am a <span className="blue">Software Engineer</span> 💻 living in Dublin, Ireland  <img src={irelandFlag} className="ireland-flag" ></img> <br/><br/> I enjoy creating projects to learn <span className="blue">Data Science</span> 🔬 <br/><br/>
-                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'/cv.pdf'} without rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
+                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'/Benedict McGovern CV.pdf'} without rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
                                 </div>
                             </div>
                         </Fade>
@@ -314,7 +315,7 @@ const Home = () =>{
                                     "link": "https://colab.research.google.com/drive/1xWj68aaYW9ZDNZrWzfEFyOXlKVaP91U-", 
                                     "githubLink": "https://github.com/benedictmc/Final-Year-Project",
                                     "hasPDF": true,
-                                    "pdfLink": "https://github.com/benedictmc/Final-Year-Project/blob/master/15340696.pdf"
+                                    "pdfLink": process.env.PUBLIC_URL+'/GAN Timeseries Prediction.pdf'
                                 }}/>
                             <CustomCard card={
                                 {
@@ -346,25 +347,10 @@ const Home = () =>{
                             </Button>
                             <ToastContainer />
                         </div>
-
-                        
-                            {/* <Fade left>
-                                <Card>
-                                    
-                                    <Card.Body>
-                                        <Card.Title className="skill-title ">Changed and pushed 20:01</Card.Title>
-                                        <Card.Text>
-                                        
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Fade> */}
                     </div>
-
             </div>
 
             <div className="footer">
-
 
             </div>
         </div>
