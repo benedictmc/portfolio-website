@@ -336,9 +336,13 @@ const Home = () =>{
                             Feel free to send me an email below!
                             <br></br>
                             </p>
-                            <Button className="contact-button" size="lg" onClick={contactEmail}>
+                            <Button className="contact-button-desktop" size="lg" onClick={contactEmail}>
                                 benmcgovern13@gmail.com
                             </Button>
+                            <Button className="contact-button-mobile" size="lg" onClick={contactEmail}>
+                                <a className="email-link" target="_blank" href="mailto:benmcgovern13@gmail.com?Subject=Hello!">benmcgovern13@gmail.com</a>
+                            </Button>
+                            
                             <ToastContainer />
                         </div>
                     </Fade>

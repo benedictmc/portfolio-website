@@ -52,11 +52,35 @@
   padding-left: 10%;
 }
 
-.contact-button{
+.contact-button-desktop{
   padding: 30px;
   margin-top: 3%;
   width: min-content;
   align-self: center;
+}
+
+
+.contact-button-mobile{
+  display: none !important;
+  padding: 30px;
+  margin-top: 3%;
+  width: min-content;
+  align-self: center;
+}
+
+@media (max-width:800px) {
+
+  .contact-button-desktop{
+    display: none !important;
+  }
+  
+  
+  .contact-button-mobile{
+    display: block !important ;
+  }
+}
+.email-link{
+  color: white;
 }
 
 
