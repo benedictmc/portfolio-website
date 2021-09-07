@@ -61,3 +61,30 @@ export const MenuItems = [
 
     }, 
 ]
+
+export const MenuItemsMobile = [
+    {
+        title: 'About', 
+        url: '#',
+        cName: 'nav-links', 
+        scroll : "scrollToAbout"
+    },
+    {
+        title: 'Skills', 
+        url: '#',
+        cName: 'nav-links', 
+        scroll : "scrollToSkills"
+    },
+    {
+        title: 'Projects', 
+        url: '#',
+        cName: 'nav-links', 
+        scroll : "scrollToProjects"
+    }, {
+        title: 'Contact', 
+        url: '#',
+        cName: 'nav-links',
+        scroll : "scrollToContact"
+
+    }, 
+]
