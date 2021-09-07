@@ -6,15 +6,24 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Navbar = () => {
+    // let bars = false
+    
+    const [bars, setBars] = useState(false);
+
+    const handleClick = () =>{
+        console.log("Click", bars)
+        setBars(!bars)
+        // bars = true
+    }
 
     return(
         <div>
         <nav className="NavbarItems">
             {/* <div className="menu-icon" onClick={this.handleClick}> */}
-            <div className="menu-icon">
-                <i className={false ? 'fas fa-times': 'fas fa-bars'}/>
+            <div className="menu-icon" onClick={handleClick}>
+                <i className={bars ? 'fas fa-times': 'fas fa-bars'}/>
             </div>
-            <ul className={false ? 'nav-menu active': 'nav-menu'}>
+            <ul className={bars ? 'nav-menu active': 'nav-menu'}>
                 {
                     MenuItems.map((item, index) => {
                         return(

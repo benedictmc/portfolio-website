@@ -4,7 +4,6 @@ import github from './assets/github.png'
 
 const CustomCard = (props) => {
     const card = props.card
-    console.log(card)
     return ( 
         <div className={card.class}>
             <div className="custom-card-content">

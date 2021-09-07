@@ -81,7 +81,6 @@ const Home = () =>{
 
 
     const sleep = (milliseconds) => {
-        console.log("Sleeping")
         return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
 
@@ -98,7 +97,6 @@ const Home = () =>{
 
     const contactEmail = () =>{
         navigator.clipboard.writeText('benmcgovern13@gmail.com')
-        console.log("Here")
         toast.success("Email Copied! 😃", {
             position: "top-right",
             autoClose: 3000,
@@ -112,8 +110,6 @@ const Home = () =>{
 
 
     useEffect(() =>{
-        console.log("Setting event listener")
-       
         mimicLoading()    
     }, [])
 
@@ -124,7 +120,6 @@ const Home = () =>{
           }, 2000)
           
         setTimeout(() => {
-            console.log("Setting fade to true...")
             setIntroTextFade(true)
             setShowButton(true)
             setParticles(true)
@@ -135,7 +130,6 @@ const Home = () =>{
 
     const handleScroll = ()=>{
         if (!introTextFade & introText){
-            console.log("Setting fade...")
             setIntroTextFade(true)
             setShowButton(true)
         }
@@ -205,7 +199,7 @@ const Home = () =>{
                             <div>
                                 <div className="short-description" >
                                     I am a <span className="blue">Software Engineer</span> 💻 living in Dublin, Ireland  <img src={irelandFlag} className="ireland-flag" ></img> <br/><br/> I enjoy creating projects to learn <span className="blue">Data Science</span> 🔬 <br/><br/>
-                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'/Benedict McGovern CV.pdf'} without rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
+                                    Here are my links: <a className="link" href="https://www.linkedin.com/in/benedict-mcgovern/" target="_blank" rel="noreferrer"> LinkedIn</a> <img className="link-linkedin" src={linkedin}/>, <a className="link" href="https://github.com/benedictmc/" target="_blank" rel="noreferrer" >GitHub</a>  <img className="link-github"  src={github}/> and <a className="link" href={process.env.PUBLIC_URL+'/Benedict McGovern CV.pdf'} rel="noopener noreferrer" target="_blank">CV</a> <img className="link-cv" src={cv}/> 
                                 </div>
                             </div>
                         </Fade>
@@ -224,7 +218,7 @@ const Home = () =>{
             <div className="about-me">
                 <div className="profile-skills">
                         <img className="profile-image" src={profile_picture}></img>
-                        <div class="profile-text">
+                        <div className="profile-text">
                             <h4 className="about-heading">About Me</h4>
                             <div className="profile-description">
                                 My name is Benedict McGovern (Ben). <br/><br/> I am a software engineer. I have a completed a B.Sc in Computer Science and Software Engineering Degree from <a href="https://www.maynoothuniversity.ie/" target='_blank'>Maynooth University</a> graduating in 2019. I learned many core computer science concepts including computer architecture, formal logic and algorithms and data structures.<br/><br/> 
