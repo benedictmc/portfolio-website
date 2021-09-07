@@ -1,24 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 .home{
   height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
 
-.home-container{
-  /* padding-top: 23rem;
-  padding-bottom: 12rem; */
-  /* height: 94vh; 
-  width: 100%;  */
-  /* background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,248,251,1) 100%); */
-}
-
 
 .profile-skills{
   padding-top: 10%;
-  /* margin-top: 10%; */
   display: flex;
-
 }
 
 .empty-space{
@@ -35,10 +26,6 @@
   align-items: center;
   border-radius: 15px;
   margin-bottom: 15vh;
-  /* position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
 }
 
 .home-header{
@@ -58,11 +45,6 @@
   margin-bottom: 4px;
 }
 
-.profile-text{
-  /* padding-left: 40px; */
-  
-}
-
 
 .contact-div{
   display: flex;
@@ -71,7 +53,6 @@
 }
 
 .contact-button{
-  /* width: 15%; */
   padding: 30px;
   margin-top: 3%;
   width: min-content;
@@ -79,16 +60,13 @@
 }
 
 
-
 .contact-text{
   margin-top: 3%;
-  
   font-size: 34px;
 }
 
 .profile-description{
   font-size: 24px;
-  /* width: 1000px; */
 }
 
 .about-me{
@@ -228,7 +206,7 @@ a:hover {
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 
 .skill{
   margin-bottom: 10px;
@@ -363,12 +341,6 @@ a:hover {
     margin-right: 5px;
   }
 
-  /* .fade-box{
-    margin-left:20px;
-    margin-right:16px;
-  } */
-
-
   
   .container{
     width: 90%;
@@ -376,7 +348,7 @@ a:hover {
 
 
   .home-header{
-    padding-top: 20%;
+    /* padding-top: 20%; */
     padding-bottom: 5%;
   }
 
@@ -397,16 +369,15 @@ a:hover {
     padding-bottom: 3%;
   }
 
-  .home-container{
+  /* .home-container{
     padding-top: 15vh;
-  }
+  } */
 
 
 }
 
 
-@media (max-width:1300px) {
-
+@media (max-width:1400px) {
 
   .project-box{
     align-items: center;
@@ -429,7 +400,8 @@ a:hover {
   .profile-image{
     margin-top: 10%;
     align-self: center;
-    width: 70%;
+    width: 80%;
+    height: auto;
   }
 
   .profile-skills{
@@ -437,6 +409,33 @@ a:hover {
     justify-content: flex-end;
     padding-top: 10%;
     margin-top: 10%;
+  }
+}
+
+@media (max-width:800px) {
+
+  .skill-card{
+    margin-top: 20%;
+  }
+
+  .profile-image{
+    margin-top: 10%;
+    align-self: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .projects{
+    padding-top: 20%;
+    padding-bottom: 30%;
+  }
+
+  .contact-text{
+    font-size: 24px;
+  }
+
+  .contact{
+    padding-bottom: 20em;
   }
 }
 

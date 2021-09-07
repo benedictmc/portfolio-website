@@ -131,3 +131,21 @@
         transform: scaleX(0);
     }
 }
+
+
+@media (max-width:800px) {
+
+    .custom-card{
+        max-width: 35ch;
+        /* margin-bottom: 20%; */
+        margin-top: 15%;
+    }
+    .custom-card-title{
+        font-size: 3ch;
+    }
+
+    .custom-card-body{
+        font-size: 1.7ch;
+    }
+    
+}
